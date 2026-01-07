@@ -19,10 +19,11 @@ def student_report_card(name, score1, score2, score3):
     print(f"Average Marks: {average:.2f}")
     print(f"Class Secured: {student_class}")
 
-student_name = "Ananya"
-marks1 = 65
-marks2 = 58
-marks3 = 72
+student_name = input("Enter your name : ")
+marks1 = float(input("Enter marks1 : "))
+
+marks2 = float(input("Enter marks2 : "))
+marks3 = float(input("Enter marks3 : "))
 student_report_card(student_name, marks1, marks2, marks3)
 
 

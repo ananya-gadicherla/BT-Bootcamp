@@ -1,0 +1,73 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .form-control {
+  background-color: #2b2b2b;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark-mode .accordion-button {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ---------- ACCORDION ---------- */
+.accordion-button {
+  transition: background-color 0.3s ease;
+}
+
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ---------- LINKS ---------- */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffd700 !important;
+}
+
+/* ---------- INPUT FOCUS ---------- */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+

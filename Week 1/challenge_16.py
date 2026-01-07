@@ -1,4 +1,4 @@
-# ---------- INPUT VALIDATION ----------
+#INPUT VALIDATION 
 
 # Name
 while True:
@@ -35,7 +35,7 @@ while True:
         break
     print("Invalid bonus percentage!")
 
-# ---------- SALARY CALCULATIONS ----------
+# SALARY CALCULATIONS 
 
 gross_monthly = basic + allowance
 annual_gross = gross_monthly * 12
@@ -47,7 +47,7 @@ taxable_income = annual_gross - standard_deduction
 if taxable_income < 0:
     taxable_income = 0
 
-# ---------- TAX CALCULATION ----------
+#  TAX CALCULATION 
 
 tax = 0
 
@@ -64,18 +64,18 @@ elif taxable_income <= 1500000:
 else:
     tax = (300000 * 0.05) + (300000 * 0.10) + (300000 * 0.15) + (300000 * 0.20) + (taxable_income - 1500000) * 0.30
 
-# ---------- REBATE ----------
+#  REBATE 
 if taxable_income <= 700000:
     tax = 0
 
-# ---------- CESS ----------
+#  CESS 
 cess = tax * 0.04
 total_tax = tax + cess
 
-# ---------- NET SALARY ----------
+#  NET SALARY 
 net_salary = annual_gross - total_tax
 
-# ---------- REPORT ----------
+#  REPORT 
 
 print("\n---------------------------------------")
 print("        EMPLOYEE TAX REPORT")
